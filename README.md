@@ -11,7 +11,7 @@ Download OFRP's source and picasso's repos. Your local manifest should be someth
 <manifest>
 
 <!-- Device tree -->
-  <project name="Redmi-K30-5G/device_xiaomi_picasso_recovery" path="device/xiaomi/picasso" remote="github" revision="android-11.0_ofrp"/>
+  <project name="Redmi-K30-5G/device_xiaomi_picasso_recovery" path="device/xiaomi/picasso" remote="github" revision="fox_11.0"/>
 
 <!-- QCOM decryption -->
   <project name="TeamWin/android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="github" revision="android-11"/>
@@ -21,7 +21,7 @@ Download OFRP's source and picasso's repos. Your local manifest should be someth
 Then go to the source folder and run:
 
 ```bash
-. build/envsetup.sh && lunch omni_picasso-eng && mka recoveryimage
+. build/envsetup.sh && lunch twrp_picasso-eng && make recoveryimage
 ```
 
 # Device specifications
