@@ -24,6 +24,10 @@ DEVICE_PATH := device/xiaomi/picasso
 # Apex libraries
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
+    
+# DTB
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
 # Fastbootd
 PRODUCT_PACKAGES += \
