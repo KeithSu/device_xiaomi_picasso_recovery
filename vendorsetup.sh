@@ -41,8 +41,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     export FOX_DISABLE_APP_MANAGER=1
     export OF_MAINTAINER=masemoel
-    export FOX_VERSION=R11.1_1.10
-    export FOX_BUILD_TYPE="Stable"
+    export FOX_VERSION=R11.1_2.0
+    export FOX_BUILD_TYPE="Beta"
     export OF_SCREEN_H=2460
     export OF_STATUS_H=122
     export OF_STATUS_INDENT_LEFT=35
@@ -62,12 +62,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_ADVANCED_SECURITY=1
     export OF_NO_SAMSUNG_SPECIAL=1
     export FOX_INSTALLER_DEBUG_MODE=1
-    export OF_USE_TWRP_SAR_DETECT=1
     export OF_TARGET_DEVICES=picasso,picasso_48m
     export OF_USE_GREEN_LED=0
     export FOX_DELETE_AROMAFM=1
-    export OF_SPLASH_MAX_SIZE=104
-    export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
     export OF_QUICK_BACKUP_LIST="/boot;/dtbo;"
     export FOX_USE_SPECIFIC_MAGISK_ZIP="/home/masemoel/Escritorio/ROMs/fox_10.0/device/xiaomi/picasso/magisk/Magisk-v23.0.zip"
     export FOX_REPLACE_BUSYBOX_PS=0
@@ -76,12 +73,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_USE_TAR_BINARY=1
     export FOX_USE_XZ_UTILS=1
     export FOX_USE_SED_BINARY=1
-    export FOX_SKIP_ZIP_BINARY=1
+    export FOX_REMOVE_ZIP_BINARY=1
     export FOX_USE_LZMA_COMPRESSION=1
     export OF_ENABLE_LPTOOLS=1
     export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
     export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
-    export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 
 	# Let's see which are our build vars
     if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
