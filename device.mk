@@ -17,9 +17,10 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_NAME := picasso
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
 DEVICE_PATH := device/xiaomi/picasso
+PRODUCT_RELEASE_NAME := picasso
+PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Apex libraries
 PRODUCT_HOST_PACKAGES += \
@@ -50,3 +51,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
+    
+PRODUCT_COPY_FILES += \
+    $(OUT_DIR)/target/product/picasso/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+

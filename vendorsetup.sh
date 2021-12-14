@@ -42,7 +42,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_DISABLE_APP_MANAGER=1
     export OF_MAINTAINER=masemoel
     export FOX_VERSION=R11.1_2.0
-    export FOX_BUILD_TYPE="Beta"
+    export FOX_BUILD_TYPE="Beta-IV"
     export OF_SCREEN_H=2460
     export OF_STATUS_H=122
     export OF_STATUS_INDENT_LEFT=35
@@ -66,7 +66,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_USE_GREEN_LED=0
     export FOX_DELETE_AROMAFM=1
     export OF_QUICK_BACKUP_LIST="/boot;/dtbo;"
-    export FOX_USE_SPECIFIC_MAGISK_ZIP="/home/masemoel/Escritorio/ROMs/fox_10.0/device/xiaomi/picasso/magisk/Magisk-v23.0.zip"
+    export FOX_USE_SPECIFIC_MAGISK_ZIP="/home/masemoel/Escritorio/ROMs/fox_11.0/device/xiaomi/picasso/magisk/Magisk-v23.0.zip"
     export FOX_REPLACE_BUSYBOX_PS=0
     export FOX_USE_BASH_SHELL=1
     export FOX_ASH_IS_BASH=1
