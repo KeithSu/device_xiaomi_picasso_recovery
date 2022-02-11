@@ -33,5 +33,5 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RELEASE_NAME := Redmi K30 5G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Redmi/picasso/picasso:11/RKQ1.200826.002/V12.5.7.0.RGICNXM:user/release-keys" \
-    PRIVATE_BUILD_DESC="picasso-user 11 RKQ1.200826.002 12.5.7 release-keys"
+    BUILD_FINGERPRINT="Redmi/picasso/picasso:12/RKQ1.200826.002/22.1.8:user/release-keys" \
+    PRIVATE_BUILD_DESC="picasso-user 12 RKQ1.200826.002 22.1.8 release-keys"
